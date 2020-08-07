@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://kit.fontawesome.com/6b89de4907.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        
+        <div class="col-sm-6">
+            <h2>Personal Information</h2>
+            <hr class>
+
+            <div class="jumbotron">
+                <h3  class="bg-info text-white">Please fill in your personal data here!</h3>
+            </div>
+            <div class="form-group">
+              <label for="">Your name <span class="text-danger">*</span></label>
+              
+              <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+              <small id="helpId" class="text-muted"></small>
+            </div>
+            <div class="form-group">
+                <label for="">Age <span class="text-danger">*</span class="text-danger"></label>
+                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="">Address <span class="text-danger">*</span></label>
+                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="">Zip <span class="text-danger">*</span></label>
+                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="">City <span class="text-danger">*</span></label>
+                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted"></small>
+              </div>
+        </div>
+        <div class="col-sm-6">
+            <h2>Your Application</h2>
+            <hr>
+            <div class="jumbotron">
+                <h3  class="bg-info text-white" >Please enter your application data here!</h3>
+                
+                
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Action 1</a>
+                                    <a class="dropdown-item" href="#">Action 2</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="">Select a job <span class="text-danger">*</span></label>
+                </div>
+                <div class="col-sm-8">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
+                        Please choose
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">1</a>
+                          <a class="dropdown-item" href="#">2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="">Job type <span class="text-danger">*</span></label>
+                <div>
+                    <div class="col-check" style="margin-ringt:60px;">
+                        <input style="margin-left:20px" type="radio" id="full" name="JoyType" value="full-time" required="">
+                        <label for="full">Full-time</label>
+                    </div>
+                    <div  class="form-check" style="margin-ringt:60px;">
+                        <input type="radio" name="JoyType" id="part" value="part-time" required="">
+                        <label for="part">part-time</label>
+                    </div>
+                    <div  class="form-check" style="margin-ringt:60px;">
+                        <input type="radio" id="less" name="JoyType" value="less-than-3" required="">
+                        <label for="less">less than 3 days</label>
+                    </div>
+                    <div class="form-check" style="margin-ringt:60px;">
+                        <input type="radio" id="dayaweek" name="Joytype" value="1-day-a-week" required="">
+                        <label for="dayaweek">1 day aweek</label>
+                    </div>
+                 
+            </div>           
+            <div class="row">
+                <div class="col-12  ">
+                    <label for="date">Employment date <span class="text-danger">*</span></label>
+                    <input class="datepicker" id="date" data-date-format="mm/dd/yyyy">
+                    <button style="font-size: 13px;"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="">CV Files</label>
+                </div>
+                <div class="col-sm-8">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </div>
+            </div>             
+        </div>
+    </div>
+    <div class="col-12">
+        <h2>Contact Data</h2>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <label for="">Phone <span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-8">
+            <div class="form-group">
+                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted"></small>
+              </div>
+        </div>
+    </div>  
+    <div class="row">
+        <div class="col-sm-3">
+            <label for="">Email <span >*</span></label>
+        </div>
+        <div class="col-sm-8">
+            <div class="form-group">
+                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted"></small>
+              </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-12">
+        <h2>Security</h2>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <label for="">Security</label>
+        </div>
+        <div class="col-sm-8">
+            <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"></div>
+        </div>
+        
+    </div>  
+    <h3></h3>
+    <hr>
+    <input class="float-right" type="submit" value="submit">
+    </div>
+</body>
+
+</html>
