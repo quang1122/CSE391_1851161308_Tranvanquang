@@ -1,0 +1,28 @@
+.tbdanhsachthongbao{
+    height: 250px;
+    overflow: auto;
+
+}
+.ttnew{
+    height: 100px;
+    overflow: auto;
+}
+img{
+    height: 30px;
+}
+.col-left{
+    width: 100%;
+    height: 100%;
+    border: solid 2px blue;
+}
+.head{
+    width: 100%;
+    height: 100%;
+    border: solid 2px bisque;
+    background-color: blue;
+}
+.head{
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    font-size: 100%;
+}
