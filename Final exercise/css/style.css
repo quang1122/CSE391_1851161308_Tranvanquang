@@ -30,11 +30,12 @@ a
   border-right: 1px solid white;
 }
 .dropdown-menu{
-  background-color: #267CB2;
+  background-color: #0098DB;
 }
 menu{
   width: 75%;
   margin-left: 12.5%;
+  font-family: ;
 }
 
 #menu a:hover {
@@ -52,16 +53,23 @@ menu{
     }
     
   .body{
+    width: 270px;
+    font-size: 15px;
     margin-top: 10px;
-    border-top: 1px solid #267CB2 ;
-    border-bottom: 1px solid #267CB2;
-    border-left: 1px solid #267CB2;
-    border-right: 1px solid #267CB2;
+    border-top: 0.5px solid #0098DB ;
+    border-bottom: 0.5px solid #0098DB;
+    border-left: 0.5px solid #0098DB;
+    border-right: 0.5px solid #0098DB;
+    
   } 
-
-  head{
-    font-size: 13 px;
+  .body h3{
+    font-size: 20px;
   }
+
+.healdy{
+  line-height: 0.8;
+}
+
 
   /*----------------------------------footer--------------------------------------- */
 
@@ -69,9 +77,8 @@ menu{
       margin-top: 10px;
       text-align: center;
       background: #267CB2;
-     color: #fff;
-     height:100px;
-     padding-top: 15px;
+      color: #fff;
+      padding-top: 15px;
      
   }
   
