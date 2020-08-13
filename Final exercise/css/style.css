@@ -15,8 +15,7 @@ body{
 /*--------------------------menu------------------------------ */
 
   /*==Style cho menu===*/
-  .navbar-brand
-{ 
+  .navbar-brand{ 
   text-align: center;
   font-size: 12px;
   color: white;
@@ -35,23 +34,41 @@ a
 menu{
   width: 75%;
   margin-left: 12.5%;
-  font-family: ;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #menu a:hover {
   background: orange;
   color: orange;
 }
-  
-  
 
+.present{
+  margin: auto ;
+  border: solid 0.5px  #0098DB;
+  width: 840px !important;
+  height: 1000px !important;
+  overflow-y: auto;
+}
+.img{
+  width: 30px;
+}
+.head{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+hr.dashed {
+  border-top: 1px dashed #bbb;
+}
 .vertical-menu {
-  margin: auto;
-      width: 250px;
+      
+      width: 268px;
       height: 175px;
       overflow-y: auto;
     }
     
+    .vertical-menu a:hover {
+      color: red;
+    }
   .body{
     width: 270px;
     font-size: 15px;
@@ -66,6 +83,9 @@ menu{
     font-size: 20px;
   }
 
+  .body a:hover{
+    color: red;
+  }
 .healdy{
   line-height: 0.8;
 }
