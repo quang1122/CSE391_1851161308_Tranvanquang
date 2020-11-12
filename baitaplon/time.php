@@ -46,14 +46,14 @@
                                 <a class="nav-link" href="http://tuyensinh.uneti.edu.vn/">Tuyển sinh</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="http://daotao.uneti.edu.vn/News.aspx?MenuID=394">Thông báo</a>
+                                <a class="nav-link" href="tb.php">Thông báo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="http://daotao.uneti.edu.vn/PageContent.aspx?MenuID=423">Giờ
+                                <a class="nav-link" href="time.php">Giờ
                                     học</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="http://daotao.uneti.edu.vn/PageContent.aspx?MenuID=436">Hướng
+                                <a class="nav-link" href="hd.php">Hướng
                                     dẫn dành cho sinh viên</a>
                             </li>
                         </ul>

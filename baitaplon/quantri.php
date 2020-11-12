@@ -23,14 +23,7 @@ require('config.php');
 <body>
 
 
-	<!-- phần đầu
-	<?php
-		include"header-index.php";
-	?>
-	<?php
-	if(isset($_SESSION['Username']))
-	{
-	?> -->
+
 	<main>
 
 		<div class="container-fluid" >
@@ -60,23 +53,6 @@ require('config.php');
 			</div>
 		</div>
 	</main>
-	<?php 
-	} 
-	else
-		{
-			 header("location: dangnhap.php");
-		}
-
-		
-	// Ngắt kết nối
-	 mysqli_close($conn);
-	//Tự động thực thi khi kết thúc mã lệnh nhờ cơ chế tự động thu rác (garbage collector) - PHP4,5
-	?> 
-	 	
-	<!-- phần cuối -->
-	<?php
-		include"footer-index.php";
-	?>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>	
 	</body>

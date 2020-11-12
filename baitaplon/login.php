@@ -1,7 +1,3 @@
-<?php
-session_start();
-require('config.php');     
-?>
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +9,7 @@ require('config.php');
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,7 +24,7 @@ require('config.php');
                     <div class="col-md-4 login-sec">
                         <h2 class="text-center">Login Now</h2>
                        
-                        <form class="login-form" method="POST">
+                        <form class="login-form" method="POST" action="process.php">
                             <div class="form-group">
                                 <label for="exampleInputEmail1" class="text-uppercase">Tên đăng nhập</label>
                                 <input type="text" class="form-control" name="username" placeholder="">
@@ -46,73 +42,9 @@ require('config.php');
                             </div>
 
                         </form>
-                        <?php
-                        if (isset($_POST['btnsubmit'])){
-                            $username = $_POST["username"];
-                            $password = $_POST["password"];
-                            $password1 = md5($password);
-
-                        if (!$username || !$password) {
-                            echo "<p style='text-align:center;color:red;'>Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.</p>";
-                        }
-                        else{
-                            $sql = mysqli_query($conn,"SELECT * FROM user WHERE username='$username' and password='$password1'");
-                            if (mysqli_num_rows($sql) == 0) {
-                                echo "<div style='text-align:center;color:red;'>Tài khoản không đúng</div>";
-                            }
-                            else{
-                                echo "<div style='text-align:center;color:red;'>Đăng nhập thành công</div>";
-                               // header("location: one.php");
-                            }
-
-                        }
-                     }
-                     else{
-                        die('');
-                    }
-                        ?>
-
+                        
                     </div>
-                    <div class="col-md-8 banner-sec">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <img class="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <div class="banner-text">
-                                            <h2>This is Heaven</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block img-fluid" src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <div class="banner-text">
-                                            <h2>This is Heaven</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block img-fluid" src="https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <div class="banner-text">
-                                            <h2>This is Heaven</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                    
         </section>
     
     <!-- Optional JavaScript -->
